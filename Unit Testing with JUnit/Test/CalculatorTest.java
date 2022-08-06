@@ -1,9 +1,7 @@
-package calculator.test;
-
 import calculator.model.Calculator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest
 {
@@ -13,7 +11,7 @@ public class CalculatorTest
     @Test
     public void addTest()
     {
-        assertEquals( 7, calculator.addNumbers( 5, 3 ) );
+        assertEquals( 8, calculator.addNumbers( 5, 3 ) );
     }
 
 
@@ -34,7 +32,7 @@ public class CalculatorTest
     @Test
     public void divideTest()
     {
-        assertEquals( 7, calculator.divideNumbers( 5, 0 ) );
+        assertEquals( 0, calculator.divideNumbers( 5, 0 ) );
     }
 
 

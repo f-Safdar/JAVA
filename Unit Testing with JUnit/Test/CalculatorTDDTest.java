@@ -1,8 +1,8 @@
-package calculator.tdd;
 
-import org.junit.Test;
+import calculator.tdd.CalculatorTDD;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTDDTest
 {
@@ -13,7 +13,7 @@ public class CalculatorTDDTest
     @Test
     public void addTest()
     {
-        assertEquals( 7, calculatorTDD.addNumbers( 5, 3 ) );
+        assertEquals( 8, calculatorTDD.addNumbers( 5, 3 ) );
     }
 
 
@@ -34,6 +34,6 @@ public class CalculatorTDDTest
     @Test
     public void divideTest()
     {
-        assertEquals( 7, calculatorTDD.divideNumbers( 5, 0 ) );
+        assertEquals( 7, calculatorTDD.divideNumbers( 49, 7 ) );
     }
 }
